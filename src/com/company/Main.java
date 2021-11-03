@@ -29,7 +29,17 @@ public class Main {
         integerList.forEach(consumer);
         System.out.println("Лист 2:" + integerList1);
 
-    
+
+        List<Integer> integerList3 = new ArrayList<>();
+        integerList3.add(5);
+        integerList3.add(-1);
+        integerList3.add(23);
+        integerList3.add(null);
+        integerList.add(56);
+
+        Optional<Integer> optional = Optional.of(integerList3.get(3));
+        System.out.println(optional);
+
     }
 
     public static <T, R> R createPerson(Function<T, R> function, T value) {
