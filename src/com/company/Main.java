@@ -40,6 +40,12 @@ public class Main {
         Optional<Integer> optional = Optional.of(integerList3.get(3));
         System.out.println(optional);
 
+        Integer x =null;
+        Optional<Integer> optionalInteger = Optional.ofNullable(x);
+        System.out.println(optionalInteger);
+
+
+
     }
 
     public static <T, R> R createPerson(Function<T, R> function, T value) {
